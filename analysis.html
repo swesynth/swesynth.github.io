@@ -40,12 +40,16 @@ h1 {
 <body>
   <h1>Analysis of Bug in SWE-Synth</h1>
   <p>
-We prompt an LLM to analyze each bug-fix pair in SWE-Synth, generating and
-clustering categories for four aspects: Type of Bug, Root Cause, Effect, and Bug Fix
-Pattern. After three rounds of hierarchical clustering and manual curation, we
-define 25 Effects, 18 Root Causes, 25 Fix Patterns, and 45 Bug Types. The LLM's
-classifications align closely with our manual labels (on a sample of 100), and
-results can be explored at <a href="https://swesynth.com/analysis.html">https://swesynth.com/analysis.html</a>.
+
+We prompted the LLM <code>deepseek-v3-0324</code> to analyze each bug-fix pair
+in SWE-Synth, generating and clustering categories for four aspects: Type of
+Bug, Root Cause, Effect, and Bug Fix Pattern. After three rounds of hierarchical
+clustering and manual curation, we defined 25 categories for Effect of Bug, 18
+for Root Causes, 25 for Fix Patterns, and 45 for Bug Types. The LLM's
+classifications closely align with our manual labels (based on a sample of 100).
+The results can be explored at <a
+href="https://swesynth.com/analysis.html">https://swesynth.com/analysis.html</a>.
+
   </p>
   <div class="image-container">
     <div class="image-box">

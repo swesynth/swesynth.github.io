@@ -5,36 +5,46 @@
   <title>Bug Visualizations</title>
   <style>
   body {
-  font-family: Arial, sans-serif;
-  padding: 2rem; /* optional, can be removed if you want full edge */
-  background-color: #f9f9f9;
-  margin: 0; /* ensure no default margin */
-}
-
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-.image-container {
-  display: grid;
-  grid-template-columns: 1fr; /* 1 column by default */
-  gap: 16px;
-  width: 100%;  /* full width */
-  margin: 0;    /* no centering margin */
-}
-
-.image-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (min-width: 600px) {
-  .image-container {
-    grid-template-columns: 1fr 1fr; /* 2 columns for wider screens */
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin: 0;
   }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: justify;
 }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (min-width: 600px) {
+    .image-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
 </style>
 </head>
 <body>

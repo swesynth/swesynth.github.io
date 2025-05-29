@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bug Visualizations</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  padding: 2rem; /* optional, can be removed if you want full edge */
+  background-color: #f9f9f9;
+  margin: 0; /* ensure no default margin */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column by default */
+  gap: 16px;
+  width: 100%;  /* full width */
+  margin: 0;    /* no centering margin */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .image-container {
+    grid-template-columns: 1fr 1fr; /* 2 columns for wider screens */
+  }
+}
+</style>
+</head>
+<body>
+  <h1>Analysis of Bug in SWE-Synth</h1>
+  <div class="image-container">
+    <div class="image-box">
+      <img src="https://swesynth.com/img/Effect_of_Bug.svg" alt="Effect of Bug" />
+    </div>
+    <div class="image-box">
+      <img src="https://swesynth.com/img/Bug_Fix_Pattern.svg" alt="Bug Fix Pattern" />
+    </div>
+    <div class="image-box">
+      <img src="https://swesynth.com/img/Root_Cause_of_Bug.svg" alt="Root Cause of Bug" />
+    </div>
+    <div class="image-box">
+      <img src="https://swesynth.com/img/Type_of_Bug.svg" alt="Type of Bug" />
+    </div>
+  </div>
+</body>
+</html>
